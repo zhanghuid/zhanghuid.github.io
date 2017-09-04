@@ -3,16 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: note something
 subtitle:
 description:
-author: John Doe
-language:
+author: zhanghuid
+language: zh-Hans
 timezone:
+avatar: https://avatars2.githubusercontent.com/u/12711819?v=4&u=966b0349b101f40e03926b472c47166c3c9da2ba&s=400
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://writewrite.net
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
