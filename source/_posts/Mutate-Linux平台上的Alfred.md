@@ -2,6 +2,7 @@
 title: 'Mutate, Linux平台上的Alfred'
 date: 2017-06-02 17:29:06
 tags: ubuntu
+toc: true
 ---
 ## Mutate, Linux平台上的Alfred
     Mutate 是一个受 Alfred 启发而设计的应用启动器，通过快捷键组合可以方便您快速执行常见任务
