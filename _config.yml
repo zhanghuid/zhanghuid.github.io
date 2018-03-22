@@ -79,6 +79,6 @@ theme: maupassant
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/zhanghuid/zhanghuid.github.io.git
+  repo: git@github.com:/zhanghuid/zhanghuid.github.io.git
   branch: master
 
