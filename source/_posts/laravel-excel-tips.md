@@ -1,10 +1,9 @@
 ---
 title: laravel-excel-tips
 date: 2018-03-23 17:24:31
-tags:
+tags: laravel
+toc: true
 ---
-
-### laravel-excel 备忘
 
 ### 本文使用前提条件
 1. `"maatwebsite/excel": "~2.1.0"`
