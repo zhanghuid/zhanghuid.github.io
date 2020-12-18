@@ -8,7 +8,7 @@ toc: true
     Mutate 是一个受 Alfred 启发而设计的应用启动器，通过快捷键组合可以方便您快速执行常见任务
 
 > 图片如下:
-![mutate](./Mutate-Linux平台上的Alfred/mutate.png)
+![mutate](Mutate-Linux平台上的Alfred/mutate.png)
 
 ### 安装
 #### 编译安装

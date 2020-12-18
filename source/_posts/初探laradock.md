@@ -45,7 +45,7 @@ Server:
     git clone https://github.com/laradock/laradock.git
 ```
 
-![目录划分](./初探laradock/目录划分.png)
+![目录划分](初探laradock/目录划分.png)
 
 
 - 编辑laradock目录下的.env 文件（如果没有.env，请复制.env.example）
