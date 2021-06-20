@@ -4,7 +4,14 @@ date: 2018-03-22 11:21:25
 ---
 
 <p>
-  <i class="fa fa-user"></i> Nickname: huid
-  <i class="fa fa-envelope"></i> Email: [zhanghuid](mailto://zhang.huid@qq.com)
-  <i class="fa fa-github"> Github: [@zhanghuid](https://github.com/zhanghuid)
+  <ul>
+  <li> 
+    <a title="zhanghuid" href="mailto://zhang.huid@qq.com" target="_blank">
+    <i class="fa fa-envelope"></i> Email
+    </li>
+  <li>
+    <a href="https://github.com/zhanghuid" title="github" >
+    <i class="fab fa-github"></i> Github
+  </li>
+  </ul>
 </p>
