@@ -45,15 +45,19 @@ render_drafts: false
 post_asset_folder: true
 relative_link: false
 future: true
+
+# 客户端渲染
 highlight:
   enable: true
-  line_number: true
   auto_detect: false
+  line_number: true
   tab_replace: ''
   wrap: true
   hljs: false
+
+# 服务端渲染  
 prismjs:
-  enable: true
+  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -99,13 +103,15 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cactus
 google_analytics:
   enabled: true
   id: G-X1NDK60SDF
 
+# 主题配置
+theme: cactus
 theme_config:
-    colorscheme: white
+  colorscheme: white
+  highlight: xcode
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
