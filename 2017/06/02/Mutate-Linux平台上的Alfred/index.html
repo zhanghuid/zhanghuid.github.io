@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Mutate, Linux平台上的AlfredMutate 是一个受 Alfred 启发而设计的应用启动器，通过快捷键组合可以方便您快速执行常见任务  图片如下:  安装编译安装 安装依赖 sudo apt-get install build-essential qt5-qmake qt5-default libgtk2.0-dev libqt5x11extras5-dev libboost-re">
+    <meta name="description" content="Mutate, Linux平台上的AlfredMutate 是一个受 Alfred 启发而设计的应用启动器，通过快捷键组合可以方便您快速执行常见任务   图片如下:  安装编译安装 安装依赖 1sudo apt-get install build-essential qt5-qmake qt5-default libgtk2.0-dev libqt5x11extras5-dev libboost-">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mutate, Linux平台上的Alfred">
 <meta property="og:url" content="http://example.com/2017/06/02/Mutate-Linux%E5%B9%B3%E5%8F%B0%E4%B8%8A%E7%9A%84Alfred/index.html">
 <meta property="og:site_name" content="zhanghuid">
-<meta property="og:description" content="Mutate, Linux平台上的AlfredMutate 是一个受 Alfred 启发而设计的应用启动器，通过快捷键组合可以方便您快速执行常见任务  图片如下:  安装编译安装 安装依赖 sudo apt-get install build-essential qt5-qmake qt5-default libgtk2.0-dev libqt5x11extras5-dev libboost-re">
+<meta property="og:description" content="Mutate, Linux平台上的AlfredMutate 是一个受 Alfred 启发而设计的应用启动器，通过快捷键组合可以方便您快速执行常见任务   图片如下:  安装编译安装 安装依赖 1sudo apt-get install build-essential qt5-qmake qt5-default libgtk2.0-dev libqt5x11extras5-dev libboost-">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2017/06/02/Mutate-Linux%E5%B9%B3%E5%8F%B0%E4%B8%8A%E7%9A%84Alfred/mutate.png">
 <meta property="og:image" content="http://example.com/2017/06/02/Mutate-Linux%E5%B9%B3%E5%8F%B0%E4%B8%8A%E7%9A%84Alfred/find_applications&files.png">
@@ -60,7 +60,7 @@
     <!-- rss -->
     
     
-<meta name="generator" content="Hexo 5.3.0"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="max-width mx-auto px3 ltr">
     
@@ -159,28 +159,19 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h2 id="Mutate-Linux平台上的Alfred"><a href="#Mutate-Linux平台上的Alfred" class="headerlink" title="Mutate, Linux平台上的Alfred"></a>Mutate, Linux平台上的Alfred</h2><pre><code>Mutate 是一个受 Alfred 启发而设计的应用启动器，通过快捷键组合可以方便您快速执行常见任务</code></pre>
+    <h2 id="Mutate-Linux平台上的Alfred"><a href="#Mutate-Linux平台上的Alfred" class="headerlink" title="Mutate, Linux平台上的Alfred"></a>Mutate, Linux平台上的Alfred</h2><pre><code>Mutate 是一个受 Alfred 启发而设计的应用启动器，通过快捷键组合可以方便您快速执行常见任务
+</code></pre>
 <blockquote>
 <p>图片如下:<br><img src="/2017/06/02/Mutate-Linux%E5%B9%B3%E5%8F%B0%E4%B8%8A%E7%9A%84Alfred/mutate.png" alt="mutate"></p>
 </blockquote>
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><h4 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h4><ol>
 <li><p>安装依赖</p>
-<pre class="line-numbers language-none"><code class="language-none">sudo apt-get install build-essential qt5-qmake qt5-default libgtk2.0-dev libqt5x11extras5-dev libboost-regex-dev<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install build-essential qt5-qmake qt5-default libgtk2.0-dev libqt5x11extras5-dev libboost-regex-dev</span><br></pre></td></tr></table></figure></li>
 <li><p>下载并编译</p>
-<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;qdore&#x2F;Mutate.git
-cd Mutate&#x2F;src
-qmake
-make<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/qdore/Mutate.git</span><br><span class="line">cd Mutate/src</span><br><span class="line">qmake</span><br><span class="line">make</span><br></pre></td></tr></table></figure></li>
 <li><p>安装</p>
-<pre class="line-numbers language-none"><code class="language-none">sudo make install
-cd ..
-sudo cp info&#x2F;mutate.png &#x2F;usr&#x2F;share&#x2F;icons
-sudo cp info&#x2F;Mutate.desktop &#x2F;usr&#x2F;share&#x2F;applications
-mkdir -p ~&#x2F;.config&#x2F;Mutate
-cp -R config&#x2F;* ~&#x2F;.config&#x2F;Mutate
-chmod -R a+x ~&#x2F;.config&#x2F;Mutate&#x2F;scripts
-chmod -R a+w ~&#x2F;.config&#x2F;Mutate
-sed -i &quot;s|&#123;home&#125;|$HOME|g&quot; ~&#x2F;.config&#x2F;Mutate&#x2F;config.ini<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sudo make install</span><br><span class="line">cd ..</span><br><span class="line">sudo cp info/mutate.png /usr/share/icons</span><br><span class="line">sudo cp info/Mutate.desktop /usr/share/applications</span><br><span class="line">mkdir -p ~/.config/Mutate</span><br><span class="line">cp -R config/* ~/.config/Mutate</span><br><span class="line">chmod -R a+x ~/.config/Mutate/scripts</span><br><span class="line">chmod -R a+w ~/.config/Mutate</span><br><span class="line">sed -i &quot;s|&#123;home&#125;|$HOME|g&quot; ~/.config/Mutate/config.ini</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>快捷键</p>
 <blockquote>
 <p>默认吊起快捷键 Ctrl + d</p>
@@ -198,14 +189,13 @@ sed -i &quot;s|&#123;home&#125;|$HOME|g&quot; ~&#x2F;.config&#x2F;Mutate&#x2F;co
 </ul>
 <p><img src="/2017/06/02/Mutate-Linux%E5%B9%B3%E5%8F%B0%E4%B8%8A%E7%9A%84Alfred/find_files.png" alt="查找文件"></p>
 <ul>
-<li><p>Calculate(thanks t413)</p>
-<pre class="line-numbers language-none"><code class="language-none">NOTE:You must install sympy first:
-sudo apt-get install python-pip
-sudo pip install sympy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<li>Calculate(thanks t413)<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">NOTE:You must install sympy first:</span><br><span class="line">sudo apt-get install python-pip</span><br><span class="line">sudo pip install sympy</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
 <p><img src="/2017/06/02/Mutate-Linux%E5%B9%B3%E5%8F%B0%E4%B8%8A%E7%9A%84Alfred/calc.png" alt="Calculate"></p>
-</li>
-<li><p>Kill Processes</p>
-</li>
+<ul>
+<li>Kill Processes</li>
 </ul>
 <p><img src="/2017/06/02/Mutate-Linux%E5%B9%B3%E5%8F%B0%E4%B8%8A%E7%9A%84Alfred/kill_pocesses.png" alt="kill_pocesses"></p>
 <ul>

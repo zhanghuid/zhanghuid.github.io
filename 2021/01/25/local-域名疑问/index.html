@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="起因通过谷歌浏览器访问 &#96;fed-static.local&#96; 这个域名时，响应的时长总为 大于 &#96;5s&#96; 使用curl情况1： curl -vo &#x2F;dev&#x2F;null &#39;http:&#x2F;&#x2F;fed-static.local&#39; 结果输出❯ curl -vo &#x2F;dev&#x2F;null &#39;http:&#x2F;&#x2F;fed-static.local&#39;   % Total    % Received % Xferd">
+    <meta name="description" content="起因通过谷歌浏览器访问 &#96;fed-static.local&#96; 这个域名时，响应的时长总为 大于 &#96;5s&#96;  使用curl情况1： curl -vo &#x2F;dev&#x2F;null &#39;http:&#x2F;&#x2F;fed-static.local&#39; 结果输出1234567891011121314151617181920212223242526❯ curl -vo &#x2F;dev&#x2F;null &amp;#x27;http:&#x2F;&#x2F;f">
 <meta property="og:type" content="article">
 <meta property="og:title" content=".local 域名疑问">
 <meta property="og:url" content="http://example.com/2021/01/25/local-%E5%9F%9F%E5%90%8D%E7%96%91%E9%97%AE/index.html">
 <meta property="og:site_name" content="zhanghuid">
-<meta property="og:description" content="起因通过谷歌浏览器访问 &#96;fed-static.local&#96; 这个域名时，响应的时长总为 大于 &#96;5s&#96; 使用curl情况1： curl -vo &#x2F;dev&#x2F;null &#39;http:&#x2F;&#x2F;fed-static.local&#39; 结果输出❯ curl -vo &#x2F;dev&#x2F;null &#39;http:&#x2F;&#x2F;fed-static.local&#39;   % Total    % Received % Xferd">
+<meta property="og:description" content="起因通过谷歌浏览器访问 &#96;fed-static.local&#96; 这个域名时，响应的时长总为 大于 &#96;5s&#96;  使用curl情况1： curl -vo &#x2F;dev&#x2F;null &#39;http:&#x2F;&#x2F;fed-static.local&#39; 结果输出1234567891011121314151617181920212223242526❯ curl -vo &#x2F;dev&#x2F;null &amp;#x27;http:&#x2F;&#x2F;f">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-25T06:28:03.000Z">
-<meta property="article:modified_time" content="2021-06-16T02:33:18.969Z">
+<meta property="article:modified_time" content="2021-06-21T01:28:01.035Z">
 <meta property="article:author" content="zhanghuid">
 <meta property="article:tag" content="dns">
 <meta name="twitter:card" content="summary">
@@ -51,7 +51,7 @@
     <!-- rss -->
     
     
-<meta name="generator" content="Hexo 5.3.0"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="max-width mx-auto px3 ltr">
     
@@ -152,66 +152,21 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><pre><code>通过谷歌浏览器访问 `fed-static.local` 这个域名时，响应的时长总为 大于 `5s`</code></pre>
+    <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><pre><code>通过谷歌浏览器访问 `fed-static.local` 这个域名时，响应的时长总为 大于 `5s`
+</code></pre>
 <h2 id="使用curl"><a href="#使用curl" class="headerlink" title="使用curl"></a>使用curl</h2><h3 id="情况1："><a href="#情况1：" class="headerlink" title="情况1："></a>情况1：</h3><ol>
 <li><code>curl -vo /dev/null &#39;http://fed-static.local&#39;</code></li>
-<li>结果输出<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">❯ <span class="token function">curl</span> -vo /dev/null <span class="token string">'http://fed-static.local'</span>
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  <span class="token number">0</span>     <span class="token number">0</span>    <span class="token number">0</span>     <span class="token number">0</span>    <span class="token number">0</span>     <span class="token number">0</span>      <span class="token number">0</span>      <span class="token number">0</span> --:--:--  <span class="token number">0</span>:00:04 --:--:--     <span class="token number">0</span>*   Trying <span class="token number">192.168</span>.20.214<span class="token punctuation">..</span>.
-* TCP_NODELAY <span class="token builtin class-name">set</span>
-* Connected to fed-static.local <span class="token punctuation">(</span><span class="token number">192.168</span>.20.214<span class="token punctuation">)</span> port <span class="token number">80</span> <span class="token punctuation">(</span><span class="token comment">#0)</span>
-<span class="token operator">></span> GET / HTTP/1.1
-<span class="token operator">></span> Host: fed-static.local
-<span class="token operator">></span> User-Agent: curl/7.64.1
-<span class="token operator">></span> Accept: */*
-<span class="token operator">></span>
-<span class="token operator">&lt;</span> HTTP/1.1 <span class="token number">200</span> OK
-<span class="token operator">&lt;</span> Server: nginx/1.13.3
-<span class="token operator">&lt;</span> Date: Mon, <span class="token number">25</span> Jan <span class="token number">2021</span> 06:31:09 GMT
-<span class="token operator">&lt;</span> Content-Type: text/html<span class="token punctuation">;</span> <span class="token assign-left variable">charset</span><span class="token operator">=</span>utf-8
-<span class="token operator">&lt;</span> Content-Length: <span class="token number">3340</span>
-<span class="token operator">&lt;</span> Last-Modified: Sun, 03 Jan <span class="token number">2021</span> <span class="token number">13</span>:57:02 GMT
-<span class="token operator">&lt;</span> Connection: keep-alive
-<span class="token operator">&lt;</span> Vary: Accept-Encoding
-<span class="token operator">&lt;</span> ETag: <span class="token string">"5ff1cd2e-d0c"</span>
-<span class="token operator">&lt;</span> Accept-Ranges: bytes
-<span class="token operator">&lt;</span>
-<span class="token punctuation">&#123;</span> <span class="token punctuation">[</span><span class="token number">3340</span> bytes data<span class="token punctuation">]</span>
-<span class="token number">100</span>  <span class="token number">3340</span>  <span class="token number">100</span>  <span class="token number">3340</span>    <span class="token number">0</span>     <span class="token number">0</span>    <span class="token number">650</span>      <span class="token number">0</span>  <span class="token number">0</span>:00:05  <span class="token number">0</span>:00:05 --:--:--   <span class="token number">783</span>
-* Connection <span class="token comment">#0 to host fed-static.local left intact</span>
-* Closing connection <span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="情况2"><a href="#情况2" class="headerlink" title="情况2:"></a>情况2:</h3></li>
-<li><code>curl -vo /dev/null -H &#39;host:fed-static.local&#39; &#39;http://192.168.20.214&#39;</code></li>
-<li>结果输出：<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">❯ <span class="token function">curl</span> -vo /dev/null -H <span class="token string">'host:fed-static.local'</span> <span class="token string">'http://192.168.20.214'</span>
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  <span class="token number">0</span>     <span class="token number">0</span>    <span class="token number">0</span>     <span class="token number">0</span>    <span class="token number">0</span>     <span class="token number">0</span>      <span class="token number">0</span>      <span class="token number">0</span> --:--:-- --:--:-- --:--:--     <span class="token number">0</span>*   Trying <span class="token number">192.168</span>.20.214<span class="token punctuation">..</span>.
-* TCP_NODELAY <span class="token builtin class-name">set</span>
-* Connected to <span class="token number">192.168</span>.20.214 <span class="token punctuation">(</span><span class="token number">192.168</span>.20.214<span class="token punctuation">)</span> port <span class="token number">80</span> <span class="token punctuation">(</span><span class="token comment">#0)</span>
-<span class="token operator">></span> GET / HTTP/1.1
-<span class="token operator">></span> Host:fed-static.local
-<span class="token operator">></span> User-Agent: curl/7.64.1
-<span class="token operator">></span> Accept: */*
-<span class="token operator">></span>
-<span class="token operator">&lt;</span> HTTP/1.1 <span class="token number">200</span> OK
-<span class="token operator">&lt;</span> Server: nginx/1.13.3
-<span class="token operator">&lt;</span> Date: Mon, <span class="token number">25</span> Jan <span class="token number">2021</span> 06:33:18 GMT
-<span class="token operator">&lt;</span> Content-Type: text/html<span class="token punctuation">;</span> <span class="token assign-left variable">charset</span><span class="token operator">=</span>utf-8
-<span class="token operator">&lt;</span> Content-Length: <span class="token number">3340</span>
-<span class="token operator">&lt;</span> Last-Modified: Sun, 03 Jan <span class="token number">2021</span> <span class="token number">13</span>:57:02 GMT
-<span class="token operator">&lt;</span> Connection: keep-alive
-<span class="token operator">&lt;</span> Vary: Accept-Encoding
-<span class="token operator">&lt;</span> ETag: <span class="token string">"5ff1cd2e-d0c"</span>
-<span class="token operator">&lt;</span> Accept-Ranges: bytes
-<span class="token operator">&lt;</span>
-<span class="token punctuation">&#123;</span> <span class="token punctuation">[</span><span class="token number">3340</span> bytes data<span class="token punctuation">]</span>
-<span class="token number">100</span>  <span class="token number">3340</span>  <span class="token number">100</span>  <span class="token number">3340</span>    <span class="token number">0</span>     <span class="token number">0</span>   191k      <span class="token number">0</span> --:--:-- --:--:-- --:--:--  191k
-* Connection <span class="token comment">#0 to host 192.168.20.214 left intact</span>
-* Closing connection <span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="使用浏览器"><a href="#使用浏览器" class="headerlink" title="使用浏览器"></a>使用浏览器</h2></li>
+<li>结果输出<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">❯ curl -vo /dev/null <span class="string">&#x27;http://fed-static.local&#x27;</span></span><br><span class="line">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</span><br><span class="line">                                 Dload  Upload   Total   Spent    Left  Speed</span><br><span class="line">  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0*   Trying 192.168.20.214...</span><br><span class="line">* TCP_NODELAY <span class="built_in">set</span></span><br><span class="line">* Connected to fed-static.local (192.168.20.214) port 80 (<span class="comment">#0)</span></span><br><span class="line">&gt; GET / HTTP/1.1</span><br><span class="line">&gt; Host: fed-static.local</span><br><span class="line">&gt; User-Agent: curl/7.64.1</span><br><span class="line">&gt; Accept: */*</span><br><span class="line">&gt;</span><br><span class="line">&lt; HTTP/1.1 200 OK</span><br><span class="line">&lt; Server: nginx/1.13.3</span><br><span class="line">&lt; Date: Mon, 25 Jan 2021 06:31:09 GMT</span><br><span class="line">&lt; Content-Type: text/html; charset=utf-8</span><br><span class="line">&lt; Content-Length: 3340</span><br><span class="line">&lt; Last-Modified: Sun, 03 Jan 2021 13:57:02 GMT</span><br><span class="line">&lt; Connection: keep-alive</span><br><span class="line">&lt; Vary: Accept-Encoding</span><br><span class="line">&lt; ETag: <span class="string">&quot;5ff1cd2e-d0c&quot;</span></span><br><span class="line">&lt; Accept-Ranges: bytes</span><br><span class="line">&lt;</span><br><span class="line">&#123; [3340 bytes data]</span><br><span class="line">100  3340  100  3340    0     0    650      0  0:00:05  0:00:05 --:--:--   783</span><br><span class="line">* Connection <span class="comment">#0 to host fed-static.local left intact</span></span><br><span class="line">* Closing connection 0</span><br></pre></td></tr></table></figure>
+
+</li>
 </ol>
-<ul>
+<h3 id="情况2"><a href="#情况2" class="headerlink" title="情况2:"></a>情况2:</h3><ol>
+<li><code>curl -vo /dev/null -H &#39;host:fed-static.local&#39; &#39;http://192.168.20.214&#39;</code></li>
+<li>结果输出：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">❯ curl -vo /dev/null -H <span class="string">&#x27;host:fed-static.local&#x27;</span> <span class="string">&#x27;http://192.168.20.214&#x27;</span></span><br><span class="line">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</span><br><span class="line">                                 Dload  Upload   Total   Spent    Left  Speed</span><br><span class="line">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 192.168.20.214...</span><br><span class="line">* TCP_NODELAY <span class="built_in">set</span></span><br><span class="line">* Connected to 192.168.20.214 (192.168.20.214) port 80 (<span class="comment">#0)</span></span><br><span class="line">&gt; GET / HTTP/1.1</span><br><span class="line">&gt; Host:fed-static.local</span><br><span class="line">&gt; User-Agent: curl/7.64.1</span><br><span class="line">&gt; Accept: */*</span><br><span class="line">&gt;</span><br><span class="line">&lt; HTTP/1.1 200 OK</span><br><span class="line">&lt; Server: nginx/1.13.3</span><br><span class="line">&lt; Date: Mon, 25 Jan 2021 06:33:18 GMT</span><br><span class="line">&lt; Content-Type: text/html; charset=utf-8</span><br><span class="line">&lt; Content-Length: 3340</span><br><span class="line">&lt; Last-Modified: Sun, 03 Jan 2021 13:57:02 GMT</span><br><span class="line">&lt; Connection: keep-alive</span><br><span class="line">&lt; Vary: Accept-Encoding</span><br><span class="line">&lt; ETag: <span class="string">&quot;5ff1cd2e-d0c&quot;</span></span><br><span class="line">&lt; Accept-Ranges: bytes</span><br><span class="line">&lt;</span><br><span class="line">&#123; [3340 bytes data]</span><br><span class="line">100  3340  100  3340    0     0   191k      0 --:--:-- --:--:-- --:--:--  191k</span><br><span class="line">* Connection <span class="comment">#0 to host 192.168.20.214 left intact</span></span><br><span class="line">* Closing connection 0</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="使用浏览器"><a href="#使用浏览器" class="headerlink" title="使用浏览器"></a>使用浏览器</h2><ul>
 <li>谷歌内核的浏览器，在dns lookup的时间要5秒</li>
 <li>safari/firfox 正常响应，没有5的dns lookup</li>
 </ul>

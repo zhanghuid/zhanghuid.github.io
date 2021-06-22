@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="前提：docker versionClient:  Version:      17.06.1-ce  API version:  1.30  Go version:   go1.8.3  Git commit:   874a737  Built:        Thu Aug 17 22:48:20 2017  OS&#x2F;Arch:      windows&#x2F;amd64  Ser">
+    <meta name="description" content="前提：docker version12345678910111213141516Client: Version:      17.06.1-ce API version:  1.30 Go version:   go1.8.3 Git commit:   874a737 Built:        Thu Aug 17 22:48:20 2017 OS&#x2F;Arch:      windows&#x2F;amd">
 <meta property="og:type" content="article">
 <meta property="og:title" content="初探laradoc">
 <meta property="og:url" content="http://example.com/2017/08/29/%E5%88%9D%E6%8E%A2laradock/index.html">
 <meta property="og:site_name" content="zhanghuid">
-<meta property="og:description" content="前提：docker versionClient:  Version:      17.06.1-ce  API version:  1.30  Go version:   go1.8.3  Git commit:   874a737  Built:        Thu Aug 17 22:48:20 2017  OS&#x2F;Arch:      windows&#x2F;amd64  Ser">
+<meta property="og:description" content="前提：docker version12345678910111213141516Client: Version:      17.06.1-ce API version:  1.30 Go version:   go1.8.3 Git commit:   874a737 Built:        Thu Aug 17 22:48:20 2017 OS&#x2F;Arch:      windows&#x2F;amd">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2017/08/29/%E5%88%9D%E6%8E%A2laradock/%E7%9B%AE%E5%BD%95%E5%88%92%E5%88%86.png">
 <meta property="article:published_time" content="2017-08-29T06:51:06.000Z">
@@ -53,7 +53,7 @@
     <!-- rss -->
     
     
-<meta name="generator" content="Hexo 5.3.0"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="max-width mx-auto px3 ltr">
     
@@ -154,22 +154,8 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h2 id="前提："><a href="#前提：" class="headerlink" title="前提："></a>前提：</h2><h3 id="docker-version"><a href="#docker-version" class="headerlink" title="docker version"></a>docker version</h3><pre class="line-numbers language-none"><code class="language-none">Client:
- Version:      17.06.1-ce
- API version:  1.30
- Go version:   go1.8.3
- Git commit:   874a737
- Built:        Thu Aug 17 22:48:20 2017
- OS&#x2F;Arch:      windows&#x2F;amd64
+    <h2 id="前提："><a href="#前提：" class="headerlink" title="前提："></a>前提：</h2><h3 id="docker-version"><a href="#docker-version" class="headerlink" title="docker version"></a>docker version</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Client:</span><br><span class="line"> Version:      17.06.1-ce</span><br><span class="line"> API version:  1.30</span><br><span class="line"> Go version:   go1.8.3</span><br><span class="line"> Git commit:   874a737</span><br><span class="line"> Built:        Thu Aug 17 22:48:20 2017</span><br><span class="line"> OS/Arch:      windows/amd64</span><br><span class="line"></span><br><span class="line">Server:</span><br><span class="line"> Version:      17.06.1-ce</span><br><span class="line"> API version:  1.30 (minimum version 1.12)</span><br><span class="line"> Go version:   go1.8.3</span><br><span class="line"> Git commit:   874a737</span><br><span class="line"> Built:        Thu Aug 17 22:54:55 2017</span><br><span class="line"> OS/Arch:      linux/amd64</span><br><span class="line"> Experimental: true</span><br></pre></td></tr></table></figure>
 
-Server:
- Version:      17.06.1-ce
- API version:  1.30 (minimum version 1.12)
- Go version:   go1.8.3
- Git commit:   874a737
- Built:        Thu Aug 17 22:54:55 2017
- OS&#x2F;Arch:      linux&#x2F;amd64
- Experimental: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="laradoc"><a href="#laradoc" class="headerlink" title="laradoc"></a>laradoc</h2><p>这里记录一下个人所选择的安装<strong>流程</strong>及遇到的<strong>坑</strong>和简单<strong>使用</strong></p>
 <blockquote>
 <p><strong>具体可参考：</strong></p>
@@ -179,25 +165,30 @@ Server:
 <h3 id="安装流程："><a href="#安装流程：" class="headerlink" title="安装流程："></a>安装流程：</h3><h4 id="依赖："><a href="#依赖：" class="headerlink" title="依赖："></a>依赖：</h4><ul>
 <li><a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.docker.com/products/docker/">Docker</a><h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4></li>
-<li> 克隆 Laradock 仓库:将laradock.git克隆到跟你的项目平级的目录下<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;laradock&#x2F;laradock.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<img src="/2017/08/29/%E5%88%9D%E6%8E%A2laradock/%E7%9B%AE%E5%BD%95%E5%88%92%E5%88%86.png" alt="目录划分"></li>
+<li> 克隆 Laradock 仓库:将laradock.git克隆到跟你的项目平级的目录下<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/laradock/laradock.git</span><br></pre></td></tr></table></figure>
+
+</li>
 </ul>
+<p><img src="/2017/08/29/%E5%88%9D%E6%8E%A2laradock/%E7%9B%AE%E5%BD%95%E5%88%92%E5%88%86.png" alt="目录划分"></p>
 <ul>
 <li>编辑laradock目录下的.env 文件（如果没有.env，请复制.env.example）</li>
 </ul>
-<pre class="line-numbers language-none"><code class="language-none">cp .env.example .env<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp .env.example .env</span><br></pre></td></tr></table></figure>
+
 <ul>
-<li><p>修改.env文件（这个很重要，基本上nginx跟mysql及php的配置都在里面可以配置）<br>由于，我需要配置多项目，所以，做如下修改：</p>
-<pre class="line-numbers language-none"><code class="language-none">APPLICATION_1&#x3D;..&#x2F;  这一行代表nginx的www目录的位置，..&#x2F;：指的是laradock仓库的上一级目录<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="使用："><a href="#使用：" class="headerlink" title="使用："></a>使用：</h3><h4 id="运行nginx跟mysql的服务"><a href="#运行nginx跟mysql的服务" class="headerlink" title="运行nginx跟mysql的服务"></a>运行nginx跟mysql的服务</h4><pre class="line-numbers language-none"><code class="language-none">docker-compose up -d nginx mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h4 id="maybe可以打开浏览器访问localhost，如果不行请往下看。"><a href="#maybe可以打开浏览器访问localhost，如果不行请往下看。" class="headerlink" title="maybe可以打开浏览器访问localhost，如果不行请往下看。"></a>maybe可以打开浏览器访问localhost，如果不行请往下看。</h4><h4 id="自定义虚拟域名"><a href="#自定义虚拟域名" class="headerlink" title="自定义虚拟域名"></a>自定义虚拟域名</h4></li>
+<li>修改.env文件（这个很重要，基本上nginx跟mysql及php的配置都在里面可以配置）<br>由于，我需要配置多项目，所以，做如下修改：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">APPLICATION_1=../  这一行代表nginx的www目录的位置，../：指的是laradock仓库的上一级目录</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="使用："><a href="#使用：" class="headerlink" title="使用："></a>使用：</h3><h4 id="运行nginx跟mysql的服务"><a href="#运行nginx跟mysql的服务" class="headerlink" title="运行nginx跟mysql的服务"></a>运行nginx跟mysql的服务</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d nginx mysql</span><br></pre></td></tr></table></figure>
+<h4 id="maybe可以打开浏览器访问localhost，如果不行请往下看。"><a href="#maybe可以打开浏览器访问localhost，如果不行请往下看。" class="headerlink" title="maybe可以打开浏览器访问localhost，如果不行请往下看。"></a>maybe可以打开浏览器访问localhost，如果不行请往下看。</h4><h4 id="自定义虚拟域名"><a href="#自定义虚拟域名" class="headerlink" title="自定义虚拟域名"></a>自定义虚拟域名</h4><ul>
 <li><p>进入laradock/nginx/sites</p>
 </li>
 <li><p>复制一份<code>sample.conf.example</code>重命名为<code>your like.conf</code></p>
 </li>
 <li><p>修改</p>
-<pre class="line-numbers language-none"><code class="language-none">server_name your like;
-root &#x2F;var&#x2F;www&#x2F;your like;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">server_name your like;</span><br><span class="line">root /var/www/your like;</span><br></pre></td></tr></table></figure>
+</li>
 <li><p> 重启nginx服务<br><code>docker-compose restart nginx</code></p>
 </li>
 </ul>
