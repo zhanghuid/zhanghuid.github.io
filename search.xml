@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>PHP-字符串下标形式访问小记</title>
+      <link href="/2021/07/14/PHP-%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8B%E6%A0%87%E5%BD%A2%E5%BC%8F%E8%AE%BF%E9%97%AE%E5%B0%8F%E8%AE%B0/"/>
+      <url>/2021/07/14/PHP-%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8B%E6%A0%87%E5%BD%A2%E5%BC%8F%E8%AE%BF%E9%97%AE%E5%B0%8F%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// waring ==&gt; 修改失败</span></span><br><span class="line"><span class="comment">// PHP Warning:  Cannot use a scalar value as an array in /Users/huid/web/learns/php-learn/error.php on line 12</span></span><br><span class="line"><span class="variable">$out</span> = <span class="number">4238</span>;</span><br><span class="line"><span class="comment">// waring ==&gt; 修改成功</span></span><br><span class="line"><span class="comment">// PHP Warning:  Illegal string offset &#x27;aaa&#x27; in /Users/huid/web/learns/php-learn/error.php on line 9</span></span><br><span class="line"><span class="variable">$out</span> = <span class="string">&#x27;4238&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable">$out</span>[<span class="string">&#x27;aaa&#x27;</span>] = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> <span class="variable">$out</span>;</span><br></pre></td></tr></table></figure><h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><blockquote><p>1的情况，会修改成功，输出 1238<br>2的情况，会修改成功，输出 1238</p></blockquote><h3 id="尝试理解"><a href="#尝试理解" class="headerlink" title="尝试理解"></a>尝试理解</h3><h4 id="问题1：为啥是-1238"><a href="#问题1：为啥是-1238" class="headerlink" title="问题1：为啥是 1238?"></a>问题1：为啥是 1238?</h4><blockquote><p>答：$out[] 这种模式下，代表 会以数组的形式访问 $out（字符串赋值时），$out[‘aaa’] 会变成 $out[0] 去访问下标为 0 的 $out 字符串<br>类比：’aa’ == 0 这种情况； 可将 $out[‘aaa’] 换成 $out[3] 试一下效果</p></blockquote><h4 id="问题2-为啥-整型-会失败？"><a href="#问题2-为啥-整型-会失败？" class="headerlink" title="问题2: 为啥 整型 会失败？"></a>问题2: 为啥 整型 会失败？</h4><blockquote><p>答：整型不能以数组下标的形式访问</p></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Awesome Video</title>
       <link href="/2021/06/22/Awesome%20Video/"/>
       <url>/2021/06/22/Awesome%20Video/</url>
