@@ -5,14 +5,12 @@ tags: Awesome
 ---
 
 
-免得想看视频时，没得看，先收集一波先。
-
 **说明**
 
+> 免得想看视频时，没得看，先收集一波先。
 
-## 目录
+**目录**
 
-- [目录](#目录)
 - [动漫](#动漫)
   - [在线](#在线)
   - [资讯 & 下载](#资讯--下载)
@@ -20,10 +18,10 @@ tags: Awesome
   - [影视大全](#影视大全)
   - [影视下载](#影视下载)
   - [电视剧](#电视剧)
+    - [美剧](#美剧)
+    - [韩剧](#韩剧)
   - [vip 视频](#vip-视频)
 - [漫画](#漫画)
-
-
 
 
 
@@ -67,29 +65,37 @@ tags: Awesome
 * [孤单又灿烂的神-鬼怪详情介绍-孤单又灿烂的神-鬼怪在线观看-孤单又灿烂的神-鬼怪迅雷下载 - 蜗牛视频-免费在线VIP视频网站,海量高清视频在线观看](https://www.snailok.com/p/7246-1-10.html)
 * [两个BT – BT下载与分享](https://www.bttwo.com/)
 * [电影推荐 · MVCAT](https://www.mvcat.com/)
-* [最新最近热播电影-推荐最近热播电影-素白白影视-在线电影-免费观看](https://www.subaibai.com/hot-month)
 * [NO视频 – 不负追剧好时光 (￣▽￣)"](https://www.novipnoad.com/)
 * [电影蜜蜂-高清电影资源最新电影下载](https://www.idybee.com/)
 * [哔嘀影视，热门电影，最新电影，最新电视剧，免费下载，免费在线观看](https://www.bde4.cc/)
-* [简影](https://tv.syrme.top/)
 * [疯狂影视搜索-电影搜索一站拥有无尽影视资源](http://ifkdy.com/)
 * [电影 - 新视觉影院_6080新视觉影院_YY6080新视觉影院](https://www.xinshipai.vip/vodtype/1.html)
-* [](https://z1.m1907.cn/)
+* [m1907](https://z1.m1907.cn/)
 * [独播库](https://www.duboku.tv/)
 * [片库 - 全网高清影视聚合下载](https://www.pianku.tv/)
 * [爱笑聚 - 最新影视剧分享平台](https://www.aixiaoju.com/)
 * [主页 \| 星河影院](https://xinghe.tv/)
 * [爱迪影视](https://aidi.tv/v/dongman.html)
 * [闪电影视](https://www.ak1080.com/)
+* [在线之家](https://www.zxzj.me/)
 
 ### 影视下载
 * [6v电影网，最新电影，最新电视剧，免费电影下载，电视剧下载，迅雷下载](https://www.6vgood.com/)
 
 ### 电视剧
-* [韩剧网-韩剧TV,最新韩剧,韩国电视剧,剧集网](https://www.juji.tv/)
-* [天天美剧 - 好看的美剧下载\|美剧爱好者的天堂](https://www.ttkmj.org/)
+
+#### 美剧
+* [91美剧网](https://91mjw.com/)
+* [爱美剧](https://www.meiju11.com/Play/3542-1-19.html)
 * [美剧天堂 - 天天美剧在线观看,美剧下载,好看的美剧 - Powered by www.3ghkw.com](https://www.3ghkw.com/)
-* [《绝望主妇第一季》第6集在线观看- 在线之家](https://www.zxzj.me/video/1563-1-6.html)
+* [天天美剧 - 好看的美剧下载\|美剧爱好者的天堂](https://www.ttkmj.org/)
+* [美剧天堂](https://www.meijutt.tv/)
+* [阿哥美剧](http://www.btzx2017.com/)
+* [美剧鸟](http://www.meijuniao.com/)
+
+#### 韩剧
+* [韩剧网-韩剧TV,最新韩剧,韩国电视剧,剧集网](https://www.juji.tv/)
+
 
 ### vip 视频
 * [BL解析-Vip视频在线解析](https://vip.bljiex.com/)
