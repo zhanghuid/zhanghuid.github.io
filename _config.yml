@@ -14,7 +14,7 @@ avatar: https://avatars2.githubusercontent.com/u/12711819?v=4&u=966b0349b101f40e
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://example.com
+url: http://blog.mykeep.fun
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

@@ -74,13 +74,14 @@ tags: Awesome
 * [独播库](https://www.duboku.tv/)
 * [片库 - 全网高清影视聚合下载](https://www.pianku.tv/)
 * [爱笑聚 - 最新影视剧分享平台](https://www.aixiaoju.com/)
-* [主页 \| 星河影院](https://xinghe.tv/)
+* [主页 \| 星河影院 -- 需翻墙](https://xinghe.tv/)
 * [爱迪影视](https://aidi.tv/v/dongman.html)
 * [闪电影视](https://www.ak1080.com/)
 * [在线之家](https://www.zxzj.me/)
 
 ### 影视下载
 * [6v电影网，最新电影，最新电视剧，免费电影下载，电视剧下载，迅雷下载](https://www.6vgood.com/)
+* [迅雷电影天堂](https://www.xl720.com/)
 
 ### 电视剧
 
