@@ -46,6 +46,8 @@ tags: Awesome
 * [番組、萌え](https://bangumi.moe/)
 * [番组放送](https://bgmlist.com/)
 * [爱恋动漫BT下载](http://www.kisssub.org/)
+* [零度动漫下载站](https://bt.acgzero.com/?catId=331)
+* [搜网通](https://www.s5t.com/)
 
 
 ## 影视
@@ -59,10 +61,8 @@ tags: Awesome
 * [片吧-最新手机电影-电视剧排行榜-片吧影院](https://www.pianba.net/)
 * [555电影-免费电影-在线电影网-入殓师-秘密访客-风林火山-我的姐姐-第十一回-555影视-4月份-2021最新电影-六人-泰坦尼克上的中国幸存者](https://www.555dy1.com/)
 * [奈飞星高清](https://nfxhd.com/?btwaf=73929542)
-* [《长安十二时辰》第01集免费手机在线观看_电视剧_达达兔影院_达达兔电影网](https://v.jlszyy.cc/gc/changanshiershichen/play-0-0.html)
 * [【美剧】权力的游戏 第六季 (10集全)【衣柜字幕组】_高清在线观看 – NO视频](https://www.novipnoad.com/tv/western/114857.html)
 * [豆瓣电影本周口碑榜 - 在线观看](http://lackk.com/douban/)
-* [孤单又灿烂的神-鬼怪详情介绍-孤单又灿烂的神-鬼怪在线观看-孤单又灿烂的神-鬼怪迅雷下载 - 蜗牛视频-免费在线VIP视频网站,海量高清视频在线观看](https://www.snailok.com/p/7246-1-10.html)
 * [两个BT – BT下载与分享](https://www.bttwo.com/)
 * [电影推荐 · MVCAT](https://www.mvcat.com/)
 * [NO视频 – 不负追剧好时光 (￣▽￣)"](https://www.novipnoad.com/)
@@ -82,17 +82,15 @@ tags: Awesome
 ### 影视下载
 * [6v电影网，最新电影，最新电视剧，免费电影下载，电视剧下载，迅雷下载](https://www.6vgood.com/)
 * [迅雷电影天堂](https://www.xl720.com/)
+* [人人影视](https://yyets.dmesg.app/resource?id=11022)
+* [电影天堂](https://www.dytt89.com/)
 
 ### 电视剧
 
 #### 美剧
 * [91美剧网](https://91mjw.com/)
 * [爱美剧](https://www.meiju11.com/Play/3542-1-19.html)
-* [美剧天堂 - 天天美剧在线观看,美剧下载,好看的美剧 - Powered by www.3ghkw.com](https://www.3ghkw.com/)
-* [天天美剧 - 好看的美剧下载\|美剧爱好者的天堂](https://www.ttkmj.org/)
-* [美剧天堂](https://www.meijutt.tv/)
-* [阿哥美剧](http://www.btzx2017.com/)
-* [美剧鸟](http://www.meijuniao.com/)
+* [美剧迷](https://www.meijumi.net/)
 
 #### 韩剧
 * [韩剧网-韩剧TV,最新韩剧,韩国电视剧,剧集网](https://www.juji.tv/)
