@@ -91,7 +91,7 @@
             headers: headers
         }).then(response => response.json())
             .then(data => {
-                const imageUrl = `https://www.bing.com${data.images[0].url}`;
+                const imageUrl = `https://www.bing.com${data.images[0].urlbase}_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&rs=1&c=4&qlt=100&uhd=1&uhdwidth=3840&uhdheight=2160`;
                 document.body.style.backgroundImage = `url(${imageUrl})`;
                 adjustTextColor(imageUrl);
             })
