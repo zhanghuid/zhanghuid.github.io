@@ -1,44 +1,69 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>🇭🇮, I’m huid | Huid</title>
-    <meta name="description" content="zhang">
-    <link rel="canonical" href="https://zhanghuid.github.io/">
-    <meta property="og:title" content="🇭🇮, I’m huid">
-    <meta property="og:description" content="zhang">
-    <meta property="og:url" content="https://zhanghuid.github.io/">
-    <meta property="og:site_name" content="Huid">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary">
-    <meta property="twitter:title" content="🇭🇮, I’m huid">
-    <link rel="stylesheet" href="/assets/css/custom.css">
-    <link rel="stylesheet" href="/assets/css/common.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇭🇮, I'm huid | Huid</title>
+    <meta name="description" content="Personal website of huid - Developer & Tech Enthusiast">
+    <link rel="stylesheet" href="/assets/css/kami.css">
 </head>
-
 <body>
-    <div class="skeleton-bg" id="skeletonBg"></div>
-    <div class="container-lg px-3 my-5 markdown-body">
-        <div class="skeleton">
-            <div class="loader"></div>
-            <h1>Loading, please wait...</h1>
-        </div>
-        <div class="content">
-            <h1>🇭🇮, I’m <a href="https://zhanghuid.github.io">huid</a></h1>
-            <p>
-                The day that I stopped searching for the answers and started coming up with my own was the day that I started really
-                growing as a developer.
-            </p>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
-        integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-    <script src="assets/js/main.js"></script>
+    <button class="theme-toggle" id="themeToggle">◐</button>
+    
+    <main class="page">
+        <header>
+            <div class="eyebrow">Developer</div>
+            <h1>🇭🇮, I'm huid</h1>
+            <p class="lead">The day that I stopped searching for the answers and started coming up with my own was the day that I started really growing as a developer.</p>
+            <div class="stack">
+                <span>PHP</span>
+                <span>Python</span>
+                <span>JavaScript</span>
+                <span>Go</span>
+            </div>
+        </header>
+        
+        <section>
+            <div class="section-label">Philosophy</div>
+            <h2>What I believe</h2>
+            <blockquote>Keep it simple, stupid</blockquote>
+            <blockquote>Continuous improvement</blockquote>
+            <blockquote>Collaboration matters</blockquote>
+        </section>
+        
+        <footer>
+            <div class="social">
+                <a href="https://github.com/zhanghuid" target="_blank">GH</a>
+            </div>
+            <p class="copyright">© 2023 huid</p>
+        </footer>
+    </main>
+    
+    <script>
+        const toggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const mq = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        function apply(dark) {
+            body.classList.toggle('dark', dark);
+        }
+        
+        function load() {
+            const s = localStorage.getItem('theme');
+            if (s) return s === 'dark';
+            return mq.matches;
+        }
+        
+        apply(load());
+        
+        mq.addEventListener('change', () => {
+            if (!localStorage.getItem('theme')) apply(mq.matches);
+        });
+        
+        toggle.addEventListener('click', () => {
+            const d = body.classList.toggle('dark');
+            localStorage.setItem('theme', d ? 'dark' : 'light');
+        });
+    </script>
 </body>
-
 </html>
